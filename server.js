@@ -19,7 +19,7 @@ app.use(express.static("public"));
 require("./routes/api.js")(app);
 require("./routes/view.js")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 
 // Start the server
